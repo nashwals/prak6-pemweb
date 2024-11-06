@@ -1,0 +1,129 @@
+/* Set styling umum untuk elemen dan font */
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Pengaturan tampilan body dan penempatan kalkulator */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Styling kalkulator */
+.kalkulator {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Box status lulus/gagal */
+.lulusGagal {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Warna untuk status lulus dan gagal */
+.lulus {
+    background-color: #28a745;
+    color: white;
+}
+
+.gagal {
+    background-color: #dc3545;
+    color: white;
+}
+
+.nilai {
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+/* Tampilan hasil nilai */
+.nilaiHasil {
+    font-size: 36pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.inputCalc {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.tombolAngka {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18pt;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.tombolHitung .btn {
+    font-size: 18pt;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-dark {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+/* Responsive design untuk tampilan mobile */
+@media (max-width: 768px) {
+    .kalkulator {
+        padding: 20px;
+    }
+
+    .inputCalc {
+        margin-bottom: 20px;
+    }
+
+    .tombolAngka button {
+        font-size: 16pt;
+        padding: 12px;
+    }
+
+    .tombolHitung .btn {
+        font-size: 16pt;
+        padding: 12px;
+    }
+}
