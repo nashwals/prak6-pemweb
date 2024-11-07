@@ -10,7 +10,7 @@ function setCurrentInput(fieldId) {
     currentInputField = document.getElementById(fieldId);
 }
 
-// Fungsi memasukkan angka ke input yang aktif
+// Fungsi untuk memasukkan angka ke input yang aktif
 function nilaiMasuk(input) {
     if (currentInputField) {
         if (input === '.' && currentInputField.value.includes('.')) {
